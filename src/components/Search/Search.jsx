@@ -3,18 +3,6 @@ import useStyles from "./styles";
 import TextField from "@material-ui/core/TextField";
 import SearchIcon from "@material-ui/icons/Search";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import styled from "styled-components";
-
-const WhiteBorderTextField = styled(TextField)`
-  & label.Mui-focused {
-    // color: white;
-  }
-  & .MuiOutlinedInput-root {
-    &.Mui-focused fieldset {
-      // border: none;
-    }
-  }
-`;
 
 const Search = ({ regionHandleChange, inputHandleChange, mode }) => {
   const classes = useStyles();
@@ -31,7 +19,7 @@ const Search = ({ regionHandleChange, inputHandleChange, mode }) => {
           flexWrap: "wrap",
         }}
       >
-        <WhiteBorderTextField
+        <TextField
           style={{ width: "500px", marginBottom: "1em" }}
           className={mode ? classes.search : classes.search_dark}
           id="outlined-basic"
@@ -53,7 +41,7 @@ const Search = ({ regionHandleChange, inputHandleChange, mode }) => {
               </InputAdornment>
             ),
           }}
-        ></WhiteBorderTextField>
+        ></TextField>
 
         <TextField
           id="outlined-select-native"

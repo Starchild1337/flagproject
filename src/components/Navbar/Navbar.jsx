@@ -17,7 +17,7 @@ const Navbar = ({ darkModeToggle, mode }) => {
       >
         <Toolbar className={classes.toolbar}>
           <Typography variant="h5" className={classes.title}>
-            <a href="/" style={{ textDecoration: "none" }}>
+            <a href="/flagproject" style={{ textDecoration: "none" }}>
               Where in the world?
             </a>
           </Typography>
